@@ -1,0 +1,30 @@
+---
+
+- hosts: all
+
+  vars:
+    client: /vagrant
+
+  tasks:
+
+  ##
+  # Frontend Setup and provisioning
+  ##
+
+  - name: Download noad setup script
+    shell: "curl -sL https://rpm.nodesource.com/setup_6.x | bash -"
+    args:
+      chdir: /tmp/
+    sudo: yes
+
+  - name: Install nodejs
+    yum: name={{item}}
+    with_items:
+      - gcc-c++
+      - nodejs
+    sudo: yes
+
+  # - name: Install node modules
+  #   npm:
+  #     path: "{{client}}"
+  #   sudo: yes
