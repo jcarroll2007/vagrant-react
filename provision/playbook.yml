@@ -24,7 +24,7 @@
       - nodejs
     sudo: yes
 
-  # - name: Install node modules
-  #   npm:
-  #     path: "{{client}}"
-  #   sudo: yes
+  - name: Install node modules
+    npm:
+      path: "{{client}}"
+    sudo: yes
