@@ -28,3 +28,9 @@
     npm:
       path: "{{client}}"
     sudo: yes
+
+  - name: create webpack dll
+    shell: "npm run postsetup"
+    args:
+      chdir: "{{client}}"
+    sudo: yes
