@@ -3,6 +3,7 @@ coverage
 build
 node_modules
 stats.json
+.vagrant
 
 # Cruft
 .DS_Store
