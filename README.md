@@ -11,7 +11,7 @@
 ### Local Development
 For this option you must have node and npm installed on your machine.
 
-1. Run `npm run install` to install node modules
+1. Run `npm install` to install node modules
 2. Run `npm run postsetup` to create necessary files for build config.
 3. Run `npm run start` to start the development server and navigate to <a href="http://localhost:3000/">localhost:3000</a> in your browser.
 
